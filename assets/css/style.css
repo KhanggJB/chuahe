@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: helvetica; 
+
+}
+#main {
+    
+}
+#header {
+    height: 46px;
+    background-color: #F1DDBF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+/* Begin Menu */
+#nav li:hover .subnav  {
+    display: block;
+}
+#nav > li:hover > a ,
+#nav .subnav li:hover a
+{
+    background-color: #f1e7d0;
+    color: #b50c38;
+    width: 100%;
+}
+
+#nav {
+    display: inline-block;
+}
+#nav > li {
+    display: inline-block;
+}
+#nav li{
+    position: relative;
+}
+#nav li a{
+    color: #532f35;
+    text-decoration: none;
+    padding: 0 24px;
+   
+    text-transform: uppercase;
+    line-height: 46px;
+    font-size: 24px;
+    display: inline-block;
+
+}
+/* End menu */
+/* Begin menu đa cấp */
+#nav .subnav a{
+    font-size: 16px 
+}
+#nav .subnav {
+    position: absolute;
+    background-color: #F1DDBF;
+    display: none;
+    list-style: none;
+    width: 100%;
+}
+/* End menu đa cấp */
+/* Begin thần tài */
+#nav .arrow_down {
+    font-size: 18px;
+}
+#header .gow-btn:active #gow-img {
+    display: block;
+
+}
+
+#header > .gow-btn:active > .gow-icon {
+    opacity: 0;
+}
+#header .gow-btn {
+    float: right;
+    Padding: 0 28px;
+    cursor: pointer;
+    
+}
+#header .gow-icon {
+    color: #532f35;
+    font-size: 28px;
+    line-height: 46px;
+}
+
+ #gow-img {
+    display: none;
+   
+}
+/* End thần tài */
+/* Begin Login */
+.lg-btn:hover  {
+    color: #b50c38;
+    background-color: #f1e7d0;
+   
+}
+.login-btn {
+    float: right;
+    position: absolute;
+     top: 50%;
+     right: 6%;
+    transform: translateY(-50%);
+    height: 46px;
+}
+.lg-btn {
+    font-size: 23px;
+    width: 100px;
+    border: none;
+    background-color: #F1DDBF;
+    color: #532f35;
+    text-transform: uppercase;
+    height: 100%;
+    cursor: pointer;
+}
+/* End Login */
+/* Begin slider */
+#slider {
+   margin-top: 46px;
+   padding-top: 50%;
+   background: url('../img/Slider/mygroup.jpg') top center / cover no-repeat;
+}
+#slider .text-content {
+
+    padding: 60px;
+    Color: rgb(202, 113, 113);
+    text-align: center;
+    font-size: 32px;
+}
+/* End slider */
+/* Begin about */
+#content #text-about {
+    padding: 50px ;
+   
+   
+}
+#content .text-content-a {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content #text-a-heading {
+    text-align: center;
+    padding-bottom: 20px;
+}
+#content .about {
+   display: flex;
+  
+}
+#content .about-jpg {
+width: 300px;
+height: 400px;
+border-radius: 12px;
+
+}
+#content .about-img {
+    margin: auto;
+}
+/* End About */
+
+#footer {
+    
+} 
+/* Begin model */
+.model.open{
+    display: flex;
+}
+.model {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.model .model-container {
+    background-color: antiquewhite;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+    max-width: calc(100% - 32px);
+}
+.model .model-header {
+    background-color: darkgoldenrod;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: white;
+}
+.model-close:hover {
+    opacity: 0.6;
+    background-color: #b50c38;
+}
+.model .model-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    cursor: pointer;
+}
+.model-body {
+    padding: 16px;
+}
+.model-label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+  
+}
+input.model-input {
+    border: solid 1px gray;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 16px;
+    padding: 12px;
+}  
+#Login-btn:hover {
+    opacity: 0.8;
+} 
+#Login-btn {
+    height: 54px;
+    width: 100%;
+    border: none;
+    background-color: #b50c38;
+    opacity: 0.9;
+    font-size: 24px;
+    cursor: pointer;
+}
+.model-footer {
+    text-align: right;
+    padding: 16px;
+}
+.model-footer a {
+    text-decoration: none;
+    color: rgb(132, 40, 132);
+
+}
+/* End model */
+/* Begin contact */
+#footer .contact {
+    margin-top: 100px;
+    background-color: aquamarine;
+}
+#footer .contact-t {
+    text-align: center;
+}
+#footer .infor {
+    
+    padding: 16px;
+    display: grid;
+    place-content: center;
+  
+}
+/* End contact*/
