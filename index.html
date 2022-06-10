@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yamate Kudasai</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/index_responsive.css">
     <link rel="stylesheet" href="./assets/themify-icons-font/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -25,19 +26,25 @@
                     <ul class="subnav">
                         <li><a href="">Contact</a></li>
                         <li><a href="">Mailbox</a></li>
+                        <li><a class="lg-btn" href="#">Login</a></li>
                     </ul>
                 </li>
             </ul>
                   <!-- End Nav -->
+                 
                  <!-- Begin God of wealth button -->
+                 
             <div class="gow-btn">
                 <i class="gow-icon ti-key"> </i>
                 <img id="gow-img" src="assets/img/GOW.jpg" alt="God of Wealth">
             </div>
-            <div class="login-btn">
-                <button class="lg-btn js-lg-btn">Login</button>
+            <div id="js-mobile-gow-btn" class="mobile-gow-btn">
+                <i class="gow-icon ti-layout-grid2-alt"> </i>
+                <img id="gow-img" src="assets/img/GOW.jpg" alt="God of Wealth">
             </div>
+      
              <!-- End God of wealth button -->
+            </div>
         </div>
         <div id="slider">
         <div class="text-content">
@@ -127,6 +134,37 @@
     </div>
     <!-- End model -->
     <script>
+        // Begin Login button
+       var header = document.getElementById('header')
+       var lgbtn = document.getElementById('js-mobile-gow-btn')
+       
+       lgbtn.onclick = function () {
+        var isClose=header.clientHeight ===46;
+        if (isClose) {
+            header.style.height ='auto'
+        } else {
+            header.style.height = null
+        }
+       }
+        // End Login Button
+    //    Begin hiện menu đa cấp 
+    var menuItems = document.querySelectorAll('#nav li a[href*="#"');
+    for (var i = 0; i < menuItems.length; i++) {
+
+    var menuItem = menuItems[i];
+   
+
+    menuItem.onclick = function (event) {
+        var isParentMenu = this.nextElementSibling &&  menuItem.nextElementSibling.classList.contains('subnav'); 
+        if (isParentMenu)  {
+            event.preventDefault();
+    
+    } else {
+        header.style.height = null;
+    } 
+    }
+}
+        // Begin Login
         const btnmodel = document.querySelector('.lg-btn')
         const Showmodel = document.querySelector('.js-model')
         const Hidemodel = document.querySelector('.js-model-close')
@@ -145,6 +183,7 @@
         btnmodel.addEventListener('click',openmodel)
         Hidemodel.addEventListener('click',removemodel)
         loginbtn.addEventListener('click',Loginbtnshow)
+        // End Login
         </script>
 </body>
 </html>
