@@ -5,8 +5,21 @@
 }
 html {
     font-family: helvetica; 
-    background-color: rgb(178, 152, 152);
+  
 
+}
+/* Begin common */
+.col {
+    float: left;
+    width: calc(100% / 3);
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+.col-half {
+    float: left;
+    width: calc(100% / 2);
+    margin-bottom: 16px;
+    padding: 0 8px;
 }
 #main {
     
@@ -18,6 +31,7 @@ html {
     top: 0;
     left: 0;
     right: 0;
+    
 }
 /* Begin Menu */
 #nav li:hover .subnav  {
@@ -51,6 +65,7 @@ html {
     display: inline-block;
 
 }
+
 /* End menu */
 /* Begin menu đa cấp */
 #nav .subnav a{
@@ -64,60 +79,6 @@ html {
     width: 100%;
 }
 /* End menu đa cấp */
-/* Begin thần tài */
-#nav .arrow_down {
-    font-size: 18px;
-}
-#header .gow-btn:active #gow-img {
-    display: block;
-
-}
-
-#header > .gow-btn:active > .gow-icon {
-    opacity: 0;
-}
-#header .gow-btn {
-    float: right;
-    Padding: 0 28px;
-    cursor: pointer;
-    
-}
-#header .gow-icon {
-    color: #532f35;
-    font-size: 28px;
-    line-height: 46px;
-}
-
- #gow-img {
-    display: none;
-   
-}
-/* End thần tài */
-/* Begin Login */
-.lg-btn:hover  {
-    color: #b50c38;
-    background-color: #f1e7d0;
-   
-}
-.login-btn {
-    float: right;
-    position: absolute;
-     top: 50%;
-     right: 6%;
-    transform: translateY(-50%);
-    height: 46px;
-}
-.lg-btn {
-    font-size: 23px;
-    width: 100px;
-    border: none;
-    background-color: #F1DDBF;
-    color: #532f35;
-    text-transform: uppercase;
-    height: 100%;
-    cursor: pointer;
-}
-/* End Login */
 /* Begin model */
 .model.open{
     display: flex;
@@ -199,11 +160,67 @@ input.model-input {
 
 }
 /* End model */
+/* Begin title */
+.s-title {
+    font-family: Verdana;
+    font-size: 60px;
+    padding-top: 106px;
+    text-align: center;
+}
+/* End title */
+/* Begin Member */
+.member {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 0 46px;
+    margin: 86px 0px;
+}
+.img-member {
+    height: 550px;
+}
+.text-name-member {
+    font-size: 32px;
+}
+/* Begin thần tài */
+.mobile-gow-btn {
+    display: none;
+}
+#nav .arrow_down {
+    font-size: 18px;
+}
+#header .gow-btn:active #gow-img {
+    display: block;
+
+}
+#header .mobile-gow-btn:active  {
+    background-color: #f1e7d0;
+}
+#header .gow-btn:active .gow-icon
+ {
+    opacity: 0;
+}
+#header .mobile-gow-btn,
+#header .gow-btn {
+    Padding: 0 28px;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+
+#header .gow-icon {
+    color: #532f35;
+    font-size: 28px;
+    line-height: 46px;
+
+}
+
+ #gow-img {
+    display: none;
+   
+}
+/* End thần tài */
 /* Begin contact */
 #footer .contact {
-    position:relative;
-    bottom:0;
-    width:100%;
     margin-top: 100px;
     background-color: aquamarine;
 }
@@ -219,38 +236,4 @@ input.model-input {
 }
 
 /* End contact*/
-/* Begin Giới thiệu nhóm */
-.member {
-    padding-top: 260px;
-}
- #member1 { 
-    border-radius: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 600px;
-    height: 800px;
-    margin-bottom: 30px;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border: #532f35 solid 2px;
-    background-color: white;
-}
-.member .image-member {
-    border-radius: 50px;
-    height: 960px;
-    width: 540px;
-    margin: 0 auto;
-   
-}
-.member .name-member {
-    padding: 8px;
-    width: 70%;
-    margin: 0 auto;
-    border-bottom: 2px solid #383838;
-}
-.member .gop {
-    margin-bottom: 60px;
-}
+
