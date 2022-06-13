@@ -20,9 +20,17 @@
     .mobile-gow-btn {
         display: block;
     }
+    iframe { 
+        height: 1080px;
+
+    }
     
 }
 @media (max-width: 835px) {
+    iframe { 
+        height: 1080px;
+
+    }
     #header {
         overflow: hidden;
     }
