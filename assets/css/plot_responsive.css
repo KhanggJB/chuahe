@@ -20,17 +20,9 @@
     .mobile-gow-btn {
         display: block;
     }
-    iframe { 
-        height: 1080px;
-
-    }
     
 }
 @media (max-width: 835px) {
-    iframe { 
-        height: 1080px;
-
-    }
     #header {
         overflow: hidden;
     }
@@ -53,4 +45,9 @@
     .mobile-gow-btn {
         display: block;
     }
+
+  
+}
+.icon-s:hover {
+    opacity: 0.7;
 }

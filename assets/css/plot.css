@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: helvetica; 
+
+}
+/* common */
+a {
+    text-decoration: none;
+}
+#main {
+    
+}
+#header {
+    height: 46px;
+    background-color: #F1DDBF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+}
+/* Begin Menu */
+#nav li:hover .subnav  {
+    display: block;
+}
+#nav > li:hover > a ,
+#nav .subnav li:hover a
+{
+    background-color: #f1e7d0;
+    color: #b50c38;
+    width: 100%;
+}
+
+#nav {
+    display: inline-block;
+}
+#nav > li {
+    display: inline-block;
+}
+#nav li{
+    position: relative;
+}
+#nav li a{
+    color: #532f35;
+    text-decoration: none;
+    padding: 0 24px;
+   
+    text-transform: uppercase;
+    line-height: 46px;
+    font-size: 24px;
+    display: inline-block;
+
+}
+
+/* End menu */
+/* Begin menu đa cấp */
+#nav .subnav a{
+    font-size: 16px 
+}
+#nav .subnav {
+    position: absolute;
+    background-color: #F1DDBF;
+    display: none;
+    list-style: none;
+    width: 100%;
+}
+/* End menu đa cấp */
+/* Begin thần tài */
+.mobile-gow-btn {
+    display: none;
+}
+#nav .arrow_down {
+    font-size: 18px;
+}
+#header .gow-btn:active #gow-img {
+    display: block;
+
+}
+#header .mobile-gow-btn:active  {
+    background-color: #f1e7d0;
+}
+#header .gow-btn:active .gow-icon
+ {
+    opacity: 0;
+}
+#header .mobile-gow-btn,
+#header .gow-btn {
+    Padding: 0 28px;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+
+#header .gow-icon {
+    color: #532f35;
+    font-size: 28px;
+    line-height: 46px;
+
+}
+
+ #gow-img {
+    display: none;
+   
+}
+/* End thần tài */
+
+/* Begin contact */
+#footer .contact {
+    margin-top: 100px;
+    background-color: aquamarine;
+}
+#footer .contact-t {
+    text-align: center;
+}
+#footer .infor {
+    
+    padding: 16px;
+    display: grid;
+    place-content: center;
+  
+}
+
+/* End contact*/
+/* Begin btn */
+.button {
+    text-align: center;
+
+}
+.btn {
+    width: 90px;
+    height: 40px;
+    background-color: #353535;
+    border: none;
+    margin: 86px 12px;
+   
+}
+.btn  a {
+   color: white;
+   font-size: 25px;
+}
+.plot {
+    margin:  10%;
+}
+.plot p {
+    width: 300px;
+    margin-top: 20px;
+}
+#ngoc,#maike,#khang,#fong,#hung,#chien,#mo,#loli {
+    margin: 60px 0;
+}
+/* Begin model */
+.model.open{
+    display: flex;
+}
+.model {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.model .model-container {
+    background-color: antiquewhite;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+    max-width: calc(100% - 32px);
+}
+.model .model-header {
+    background-color: darkgoldenrod;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: white;
+}
+.model-close:hover {
+    opacity: 0.6;
+    background-color: #b50c38;
+}
+.model .model-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    cursor: pointer;
+}
+.model-body {
+    padding: 16px;
+}
+.model-label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+  
+}
+input.model-input {
+    border: solid 1px gray;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 16px;
+    padding: 12px;
+}  
+#Login-btn:hover {
+    opacity: 0.8;
+} 
+#Login-btn {
+    height: 54px;
+    width: 100%;
+    border: none;
+    background-color: #b50c38;
+    opacity: 0.9;
+    font-size: 24px;
+    cursor: pointer;
+}
+.model-footer {
+    text-align: right;
+    padding: 16px;
+}
+.model-footer a {
+    text-decoration: none;
+    color: rgb(132, 40, 132);
+
+}
+/* End model */
+/* begin icon-s */
+.icon-s {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #b97a7f;
+
+}
